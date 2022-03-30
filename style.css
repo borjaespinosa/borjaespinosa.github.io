@@ -1,0 +1,91 @@
+.item{
+	margin-bottom: 5px;
+}
+
+.borra{
+	float: right;
+	text-decoration: none;
+    font-size: 32px;
+}
+
+.borra2{
+    font-size: 32px!important;
+    position: absolute;
+    right:10px;
+    top: 4px;
+    color: #C1272D;
+    font-weight: bold!important;
+}
+
+
+#video{
+    
+}
+
+.animacion{
+    width:100%;
+	line-height:800px;
+	text-align:center;
+}
+
+.productito{
+    width: 80%;
+}
+
+#header{
+    background-color:white;
+}
+
+.ui-icon-myicon:after {
+    background-image: url("back1.png");
+    background-size: 18px 18px;
+}
+
+.imagen{
+    float: none;
+    height:20%;
+    width:20%;
+}
+
+.itemdelista{
+	width: 100%;
+}
+
+.itemdelista .ui-checkbox{
+	width: 90%;
+	float: left;
+}
+
+.itemdelista a{
+	display: block;
+	width: 10%;
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.ui-page-theme-a .ui-focus{
+	box-shadow: none!important;
+}
+
+
+
+
+
+.ui-page-theme-a a:active, html .ui-bar-a a:active, html .ui-body-a a:active, html body .ui-group-theme-a a:active{
+    color: rgb(143,28,32)!important;
+}
+
+.minifoto{
+	height: 80px;
+	object-fit: cover;
+}
+
+.minifecha{
+	font-weight: bold;
+}
+
+#lector video{
+	width: 100%;
+    height: 100%;
+}

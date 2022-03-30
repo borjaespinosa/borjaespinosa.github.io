@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TFG APP</title>
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jquery-mobile-theme-042022-0/themes/TFG.min.css">
+
+
+    </head>
+
+	<body>
+        
+        <!-- empieza entrar -->
+        
+        <!-- 
+        PARA PONER UNA IMAGEN DE FONDO 
+        <div id="pagina0" data-role="page" style="height:100%; background-image:url(BLABLA.JPEG); background-size:cover"> 
+        -->
+            
+        <div id="pagina0" data-role="page" style="height:100%; background-color: rgb(186,14,26); background-size:cover">
+
+            <div data-role="main" style="width: 100%;">
+            
+            <a id="video" href="#pagina5">
+                <video class="animacion" no-controls>
+                  <source src="iDespensa_alta.mp4" type="video/mp4">
+                </video>
+            </a>
+        
+               
+            </div>
+   
+        </div>
+        
+        <!-- termina entrar -->
+        
+        
+        
+        
+        <!-- empieza productos -->
+        
+        <div id="pagina2" data-role="page">
+            
+            
+            
+            <div data-role="header" data-position="fixed">
+                <h1>Productos</h1>
+                
+                <a href="#minipanelito"data-icon="gear" data-iconpos="notext" style="display: none;"></a>
+                <a href="#pagina1"data-icon="plus" data-iconpos="notext" data-transition="slide">Menu</a>
+                
+            </div>
+           
+            <div data-role="main" data-position="ui-content">
+                
+                <ul data-role="listview" id="despensa" class="ui-listview">   
+                <li>
+                    <a href="#pagina1" data-transition="slide">
+                            <img src="yogur.jpg"> 
+                            <h1>Yogur de Fresa</h1> 
+                            <p>Nevera</p>
+                            <p>09-05-2020</p>
+                    </a>
+                </li>
+                
+                </ul> 
+
+            </div>
+           
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#pagina4" data-transition="none" data-icon="bullets" data-iconpos="notext"></a></li>
+                        <li><a href="#pagina5" data-transition="none" data-icon="camera" data-iconpos="notext"></a></li>
+                        <li><a href="#pagina2" data-transition="none" data-icon="calendar" data-iconpos="notext"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--termina productos -->
+        
+        
+        <!-- empieza producto -->
+        
+        <div id="pagina1" data-role="page">
+     
+            <div data-role="header" data-position="fixed">
+                <h1>Añadir producto</h1>
+                
+                <a href="#pagina2" data-icon="arrow-l" data-transition="slide" data-direction="reverse" data-iconpos="notext">Menu</a>
+                
+            </div>
+            
+            <div data-role="main" style="margin: 20px;">
+
+                <input id="nombreproducto">
+                
+
+                <input id="foto" type="file" accept="image/*;capture=camera">
+                <textarea id="fototxt" style="display: none;"></textarea>
+                <img id="fotoimg" style="width: 100%;">
+                <!--<img src="yogur.jpg" style="width:100%; margin:auto">-->
+
+                <label for="select-native-1" style="font-weight: bold">Fecha:</label>
+                <input id="fecha">
+                
+                
+                <div class="ui-field-contain" style="border:none" data-transition="slide" >
+                    <label for="select-native-1" style="font-weight: bold">Lugar de almacenaje:</label>
+                    <select name="select-native-1" id="select-native-1">
+                        <option value="Despensa">Despensa</option>
+                        <option value="Nevera">Nevera</option>
+                        <option value="Congelador">Congelador</option>
+                    </select>
+                </div>
+
+            
+                 
+                
+                
+                <input id="botonguardar" type="submit" href="#" value="Añadir producto">
+                
+                
+                
+                
+            </div>
+
+        </div>
+        
+        <!-- termina producto -->
+        
+        <!-- empieza lista de la compra -->
+        
+        <div id="pagina4" data-role="page">
+     
+            
+            
+            
+            <div data-role="header" data-position="fixed">
+                <h1>Lista de la compra</h1>
+                
+                <a href="#minipanelito"data-icon="gear" data-iconpos="notext" style="display: none">Menu</a>
+                <a href="#pagina6"data-icon="plus" data-iconpos="notext" data-transition="slide">Menu</a>
+                
+            </div>
+            
+            <div data-role="main"  class="ui-content">
+                
+                <div id="lista">
+	           
+                </div>
+
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#pagina4" data-transition="none" data-icon="bullets" data-iconpos="notext"></a></li>
+                        <li><a href="#pagina5" data-transition="none" data-icon="camera" data-iconpos="notext"></a></li>
+                        <li><a href="#pagina2" data-transition="none" data-icon="calendar" data-iconpos="notext"></a></li>
+                    </ul>
+                </div>
+            </div>
+ 
+        </div>
+
+        <!-- termina lista de la compra -->
+        
+        <!-- empieza añadir a la lista -->
+        
+        <div id="pagina6" data-role="page">
+     
+            <div data-role="header" data-position="fixed">
+                <h1>&nbsp;</h1>
+                
+                <a href="#pagina4" data-icon="arrow-l" data-transition="slide" data-direction="reverse" data-iconpos="notext">Menu</a>
+                
+            </div>
+            
+            <div data-role="main" style="margin: 20px;"  class="ui-content">
+                
+                <h1>Nombre del producto</h1>
+                <input id="texto">
+                <input id="boton" type="submit" href="#" value="Añadir producto">
+                
+                
+                
+                
+                
+                
+            </div>
+
+        </div>
+
+        <!-- termina añadir a la lista -->
+        
+        <!-- empieza escanear -->
+        
+        <div id="pagina5" data-role="page">
+     
+            
+            
+            
+            <div data-role="header" data-position="fixed">
+                <h1>Escanear</h1>
+                
+                
+                
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                
+            
+                
+                
+                
+                
+                <div id="lector"></div>
+
+                
+            </div>
+            
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#pagina4" data-transition="none" data-icon="bullets" data-iconpos="notext"></a></li>
+                        <li><a href="#pagina5" data-transition="none" data-icon="camera" data-iconpos="notext"></a></li>
+                        <li><a href="#pagina2" data-transition="none" data-icon="calendar" data-iconpos="notext"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+
+        <!-- termina escanear -->
+        
+        <script src="jquery-2.1.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://webrtc.github.io/adapter/adapter-latest.js" type="text/javascript"></script>
+        <script src="quagga.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
